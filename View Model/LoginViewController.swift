@@ -36,7 +36,9 @@ class LoginViewController: UIViewController {
                 performSegue(withIdentifier: "keHome", sender: self)
                 break
             }else{
-                print("Username Not Exist")
+                let alert = UIAlertController(title: "Warning", message: "Incorrect email or password", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Try Again!", style: .default, handler: nil))
+                self.present(alert, animated: true)
             }
         }
     }
