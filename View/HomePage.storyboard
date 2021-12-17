@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8xY-rk-coJ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8xY-rk-coJ">
                                 <rect key="frame" x="18" y="44" width="354" height="717"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eDg-AC-suC">
@@ -44,6 +43,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gd7-7N-E6s"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8xY-rk-coJ" firstAttribute="leading" secondItem="Gd7-7N-E6s" secondAttribute="leading" constant="18" id="Eyv-Yj-e26"/>
+                            <constraint firstItem="8xY-rk-coJ" firstAttribute="bottom" secondItem="Gd7-7N-E6s" secondAttribute="bottom" id="XOI-7H-dtn"/>
+                            <constraint firstItem="8xY-rk-coJ" firstAttribute="top" secondItem="Gd7-7N-E6s" secondAttribute="top" id="bXS-wC-Ge7"/>
+                            <constraint firstItem="Gd7-7N-E6s" firstAttribute="trailing" secondItem="8xY-rk-coJ" secondAttribute="trailing" constant="18" id="bgy-cL-nBW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="house.fill" catalog="system" id="0Y5-nV-Dvz">
                         <color key="badgeColor" systemColor="systemBlueColor"/>
